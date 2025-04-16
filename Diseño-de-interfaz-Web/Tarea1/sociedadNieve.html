@@ -1,0 +1,165 @@
+<!DOCTYPE html> <!-- nuestro primer emmet, tipeando ! se crea la estructura base HTML -->
+<!-- HTML - HyperText Markup Language -->
+
+<!-- Alt shift A, creamos comentario -->
+<!-- Alt arriba o abajo, movemos los bloques seleccionados -->
+<!-- Alt shift arriba o abajo, duplicamos los bloques seleccionados -->
+<!-- Ctrl F barra de busqueda -->
+
+<!--
+  notaciones
+  nombreApellido - esta es notacion camelCase
+  nombre_apellido - snake_case
+  nombre-apellido - kebab-case
+ -->
+
+
+<html lang="es"> <!-- cambiar el lenguage a "es" si la pagina es en español -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clase 2 | Sitio</title> <!-- el titulo es NECESARIO y deben ser hasta 60 caracteres, 
+    conviene que no sea muy corto para darle mas detalles a los motores de busqueda,
+    este es el Titulo de CADA pagina y NO del sitio, 
+    tambien se estila en las paginas que no son el index agregar una barra y el nombre del sitio-->
+
+  <meta name="description" content="Este es nuestro primer ejercicio de etiquetas de texto" />
+  <!-- la description es IMPORTANTE y deben ser hasta 200 caracteres -->
+  <meta name="author" content="Federico Pereyra - mail"> <!-- aqui va el nombre del autor y mail -->
+
+  <meta name="robots" content="NOINDEX"> <!-- decirle a los buscadores si indexar y como, poco uso. -->
+
+  <link rel="stylesheet" href="css/estilosSociedad.css"> <!-- ASI vinculamos las hojas de estilo CSS -->
+  <link rel="stylesheet" href="css/estilosOtro.css"> 
+
+ <!--  <style> nav {background-color: skyblue; padding: 20px;} .vinculoNav {list-style: none;} </style> -->
+ <!-- este NO es el recomendado, vincular usando <link> -->
+
+<!-- Asi traemos fuentes de GoogleFonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Holtwood+One+SC&display=swap" rel="stylesheet">
+
+  <script type="module" src="js/codigo.js"></script>
+  <!-- ESTA forma es como vamos a agregar las funcionalidades en JS -->
+  <script type="text/javascript"> /* Código JS */</script> <!-- NO SE USA MUCHO -->
+</head>
+
+<!-- si hacemos una seleccion, con tab (tabulador) movemos el bloque a la derecha del indentado
+  y con shift tab hacia la izquierda del indentado o "espaciado del codigo"-->
+
+<body>
+  <header>
+    <!-- encabezado, suele incluir el logo (vinculado al index.html o pagina inicial de nuestro sitio)
+        y el menu de navegacion principal-->
+      <nav>
+        <!-- el menu de navegacion -->
+  <!--  <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul> -->
+
+      </nav>
+    </header>
+
+  <main> <!-- para el contenido principal -->
+    <h1>El Criticon</h1> <!-- h1 es el mas importante, no debe de haber mas de UNO por pagina -->
+    <section class="contenedor">
+      <h2>La sociedad de la nieve</h2> <!-- NO PODEMOS saltearmos encabezados <h#>  -->
+      <article>
+        <h3>Introducción</h3> <!-- NO PODEMOS saltearmos encabezados, no puede ser <h4>  -->
+        <p><strong> Una película sobre una de las historias más impresionantes del siglo XX y seleccionada para
+            representar a España en los Oscar® 2024, llegó a algunos cines en diciembre y a Netflix el 4 de
+            enero de 2024.
+          </strong></p>
+
+        <p>Dirigida y escrita por <cite>J. A. Bayona</cite>, basada en el libro homónimo de <cite>Pablo Vierci</cite>, que a su vez se basa en el documental homónimo de <cite>Gonzalo Arijón</cite> que relata el accidente del vuelo 571 de la Fuerza Aérea Uruguaya en la cordillera de los Andes en 1972.</p>
+        <!-- <cite> es para citar nombres o titulos -->
+        <p>Se proyectó el 9 de septiembre de 2023 en la clausura del 80.° Festival Internacional de Cine de Venecia. El 1 de septiembre de 2023, <cite>J.A. Bayona</cite> presentó la película a los supervivientes, a sus familias y a las familias de los pasajeros fallecidos del avión Fairchild FH-227D.</p>
+        
+        <p>La película se estrenó en las salas de cine de Uruguay el 13 de diciembre de 2023, y en las de España dos dias más tarde.</p>
+        
+        <p>Asimismo, se estrenó mundialmente el 4 de enero de 2024 en la plataforma Netflix. Fue elegida por la <abbr title="Asociacion de Criticos">AACC</abbr> para representar a España en los Premios Oscar 2024 en la categoría de Mejor Película Internacional.</p>
+        <!-- <abbr> la utilizamos para las siglas y abrebiaciones, en el atributo title colocamos la definicion -->
+        
+        <p>Una vez nominado, fuimos a entrevistar a <cite>J. A. Bavona</cite> mencionando <q>Comparto la NOMINACION con todos los AMIGOS de URUGUAY, ARGENTINA y CHILE.</q> Asimismo le preguntamos por qué le era tan importante contar la historia.</p>
+        <!-- q es para las citas cortas o frases -->
+        
+        <!-- blockquote es para citar parrafos enteros o textos de otra fuenta y en el atributo cite colocamos la url citada-->
+        <blockquote cite="https://www.ort.edu.uy/">
+          <p>Cuando estaba preparando Lo imposible (2012), el libro de Pablo fue publicado en España, lo leí y quedé shockeado porque pensé que conocía la historia. Es decir, es una historia muy popular en el mundo de habla hispana, pero descubri que era mucho más grande de lo que pensaba en todos los niveles: espiritual, humano, psicológico e incluso filosófico.</p>
+          <p>Y eso era un desafio, contar esta historia de nuevo, pero alcanzando eso. Entonces, me di cuenta de que los supervivientes habían contado todo sobre si mismos, pero había una parte de la historia que no estaba contada, porque los que podían contarla no estaban aquí. Pensé que, quizás, era el momento en el que por primera vez los supervivientes podían hablar abiertamente de aquellos que nunca tuvieron la oportunidad de contar su historia.</p>
+        </blockquote>
+        <h2>Sinopsis</h2> <!-- SI PODEMOS ir hacia atras a jerarquias anteriores <h#> -->
+          <p>Cuando el avión uruguayo que transportaba a jugadores del equipo de rugby del Old Christians Club de Montevideo se estrella en el remoto corazón de la cordillera de los Andes, los sobrevivientes se ven obligados a depender unos de otros para sobrevivir.</p>
+          
+          <h3>Premios y nominaciones</h3>
+          <ul>              <!-- unorder list, lista desordenada (con viñetas o puntos) -->
+            <li>Festival Internacional de Cine de San Sebastián</li>  <!-- list item, son los unico hijos de las listas -->
+            <li>Festival de Cine de Middleburg</li>
+            <li>Premios Forqué</li>
+            <li>Globos de Oro</li>
+            <li>Premios Gova</li>
+            <li>Premios Feroz</li>
+          </ul>
+          
+          
+          <h3>Estrenos</h3>
+          <!-- Emmet (atajos de codigo)
+          ol>li*4 (crea automatico el codigo de abajo)
+          > hijos dentro del elemento anterior,
+          * multiplicamos ese elemento por tanto 
+          + agrega un elemento hermano al mismo nivel del anterior 
+          () agrupa los elementos, a veces lo necesitamos para emmet mas complejos -->
+          
+          <ol>              <!-- order list, lista ordenada (numerada) -->
+            <li>9 de septiembre de 2023 (Festival de Venecia)</li>
+            <li>13 de diciembre de 2023 (Ur.)</li>
+            <li>15 de diciembre de 2023 (Esp.)</li>
+            <li>4 de enero de 2024 (Netflix)</li>
+          </ol>
+        </article>
+      </section>
+  </main>
+
+  <aside class="contenedor"> <!-- Contenido relacionado o secundario-->
+    <div> <!-- contenedor auxiliar NO semantico de bloque -->
+      <span>  <!-- contenedor auxiliar NO semantico de linea -->
+
+      </span>
+    </div>
+    
+    <dl>
+      <dt>Sociedad</dt>
+      <dd>Definicion de que es una sociedad</dd>
+      <dd>Otra definicion</dd>
+      <dt>Nieve</dt>
+      <dd>Descripcion de que es la nieve</dd>
+    </dl>
+    <dfn>Esto es una definicion de algo</dfn>
+    <p>esto es un texto <sup>superindice</sup> y uno <sub>subindice</sub></p>
+
+    <p><b>Lorem ipsum dolor sit amet consectetur</b>, <i> elit. Impedit, nemo inventore quis quia architecto
+        deserunt,</i> incidunt voluptatem accusantium nam ad itaque quos? Eligendi culpa quidem, eius labore
+      voluptas dolorem placeat.
+    </p>
+    <!-- preferimos las etiquetas semanticas (abajo) a las que no lo son (arriba, antiguas) -->
+    <p><strong>Lorem ipsum dolor sit amet consectetur</strong>, <em> elit. Impedit, nemo inventore quis quia
+        architecto deserunt,</em> incidunt voluptatem accusantium nam ad itaque quos? Eligendi culpa quidem,
+      eius labore voluptas dolorem placeat.</p>
+  </aside>
+
+  <footer> <!-- Pie del documento con contenido legal, redes sociales etc -->
+    <small>Derechos resevados</small>
+    <p><small>Derechos resevados</small></p>
+    <h3>Derechos <small>resevados</small></h3>
+     <!-- small resta importancia y tamaño de texto a la etiqueta que usemos -->
+  </footer>
+
+
+</body>
+
+</html>
