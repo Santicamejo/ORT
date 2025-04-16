@@ -74,6 +74,21 @@ strong {
     font-size: 1.25rem;
     font-style: italic;
 }
+cite{
+    color: var(--primario);
+}
+abbr{
+    color: var(--primario);
+}
+q{
+    color: #82b0e5;
+}
+blockquote{
+    margin-left: 50px;
+    padding: 20px;
+    border-left: 4px solid var(--secundario);
+    color: var(--primario);
+}
 
 aside {
     background-color: var(--secundario);
