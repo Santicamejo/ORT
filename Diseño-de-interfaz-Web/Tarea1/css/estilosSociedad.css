@@ -89,6 +89,9 @@ blockquote{
     border-left: 4px solid var(--secundario);
     color: var(--primario);
 }
+blockquote p{
+    margin-bottom: 0;
+}
 
 aside {
     background-color: var(--secundario);

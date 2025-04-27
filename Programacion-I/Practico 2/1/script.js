@@ -1,10 +1,10 @@
-document.querySelector("#createRutina").addEventListener("click", generarRutina)
+document.querySelector("#NumPos").addEventListener("click", NumPos)
 
-function generarRutina() {
-    let dia = document.querySelector("#txtDia").value.touppercase()
-    let temperatura = Number(document.querySelector("#txtTemperatura").value)
-
-    if (dia == "DOMINGO") {
-        document.querySelector("#mgsRutina").innerHTML = "Hoy no trabajas bobis"
+function NumPos() {
+    let num = Number(document.querySelector("#txtValor").value)
+    if(num >= 0){
+        alert("El numero es positivo")
+    }else{
+        alert("el numero es negativo")
     }
 }
