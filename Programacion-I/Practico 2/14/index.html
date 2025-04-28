@@ -6,18 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Ejercicio 14</h1>
     <blockquote>
         Utilizando un plan de viajero frecuente, un cliente de una aerolínea desea consultar donde puede viajar gratis con las millas acumuladas hasta el momento. <br>
-        Las opciones son las siguientes:
-        60.000 millas - Europa (destino lejano)
-        30.000 millas - América del Norte (destino intermedio)
-        15.000 millas — América del Sur (destino cercano)
-        Si el viajero es parte del plan "Plus" sus millas rinden el doble.
+        Las opciones son las siguientes: <br>
+        60.000 millas - Europa (destino lejano)<br>
+        30.000 millas - América del Norte (destino intermedio)<br>
+        15.000 millas — América del Sur (destino cercano)<br>
+        Si el viajero es parte del plan "Plus" sus millas rinden el doble.<br>
         Dado un ingreso de millas acumuladas y el ingreso de si es parte del plan Plus (s-sí, n-no), indicarle al usuario cual es el destino más lejano al que puede viajar de manera gratuita, o indicarle  que no dispone de millas suficientes en caso que no alcance los mínimos.
         Tengo 17.000 millas y soy parte del plan plus - > puedo viajar a América del Norte como destino más lejano.
     </blockquote>
-    
+        <label for="txtCantidadMillas"></label>
+        <input type="number" id="txtCantidadMillas" placeholder="60.000">
+        <label for="slcPlus"></label>
+        <select name="" id="slcPlus">
+            <option value="s">Si</option>
+            <option value="n">No</option>
+        </select>
+        <input type="button" value="Consultar" id="btnConsultar">
+        <p id="msgDestino"></p>
     <script src="script.js"></script>
 </body>
 </html>

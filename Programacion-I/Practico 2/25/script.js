@@ -1,16 +1,34 @@
-document.querySelector("#btnCargar").addEventListener("click", mostrarDatos)
+document.querySelector("#btnCompra").addEventListener("click", Comprar)
+document.querySelector("#btnStock").addEventListener("click", guardarStock)
 
-    let salarios = 0;
-    let salarioMin = 1000000;
-    let totalEmpleados = 0;
+    let stock;
+    let mayorCompra = 0
+    let mejorCliente 
 
-function mostrarDatos() {
-    let salario = Number(document.querySelector("#txtSalario").value)
 
-    salarios = salarios + salario
-    if(salario < salarioMin) salarioMin = salario
+function guardarStock() {
+    stock = Number(document.querySelector("#txtStock").value)
+    console.log(stock);
+    document.querySelector("#divStock").style.display = "none"
+    document.querySelector("#divPedidos").style.display = "block"
+}
 
-    totalEmpleados++
-
-    document.querySelector("#msgResultados").innerHTML = `El total de sueldos a pagar este mes es de ${totalEmpleados} con un valor de ${salarios}$ donde el sueldo mas bajo es ${salarioMin}$z`
+function Comprar() {
+        let nombre = document.querySelector("#txtName").value
+        let pedido = Number(document.querySelector("#txtPedido").value)
+        
+        if (pedido <= stock) {
+            stock = stock - pedido;
+            if (pedido > mayorCompra) mejorCliente = nombre 
+            if (pedido > mayorCompra) mayorCompra = pedido 
+            document.querySelector("#msgMensaje").innerHTML = "Compra realizada!"
+            document.querySelector("#msgMensaje").style.color = "green"
+        }else{
+            document.querySelector("#msgMensaje").innerHTML = "Compra no realizada:("
+            document.querySelector("#msgMensaje").style.color = "red"
+        }
+        if (stock < 1) {
+            document.querySelector("#msgResultados").innerHTML = `El mejor cliente fue ${mejorCliente} y la mejor compra fue ${mayorCompra}` 
+            document.querySelector("#btnCompra").disabled = true
+        }
 }
